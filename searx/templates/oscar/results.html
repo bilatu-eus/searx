@@ -102,27 +102,22 @@
 
             <div class="panel panel-default">
                 <div class="panel-heading">
-                    <h4 class="panel-title">{{ _('Links') }}</h4>
+                    <h4 class="panel-title">Newsletter</h4>
                 </div>
                 <div class="panel-body">
-                    <form role="form">
-                        <div class="form-group">
-                            <label for="search_url">{{ _('Search URL') }}</label>
-                            <input id="search_url" type="url" class="form-control select-all-on-click cursor-text" name="search_url" value="{{ base_url }}?q={{ q|urlencode }}{% if selected_categories %}&amp;categories={{ selected_categories|join(",") | replace(' ','+') }}{% endif %}{% if pageno > 1 %}&amp;pageno={{ pageno }}{% endif %}" readonly>
-                        </div>
-                    </form>
+					<form action="//hodei.us9.list-manage.com/subscribe/post?u=6d75b09bde13766aab41a5c8e&amp;id=55e7c9d466" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+						<div class="form-group">
+							<label for="mce-EMAIL">Email</label>
+							<input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL">
+							<input type="submit" value="Enregistrer" name="subscribe" id="mc-embedded-subscribe" class="button" />
 
-                    <label>{{ _('Download results') }}</label>
-                    <div class="clearfix"></div>
-                    {% for output_type in ('csv', 'json', 'rss') %}
-                    <form method="{{ method or 'POST' }}" action="{{ url_for('index') }}" class="form-inline pull-{% if rtl %}right{% else %}left{% endif %} result_download">
-                        <input type="hidden" name="q" value="{{ q }}">
-                        <input type="hidden" name="format" value="{{ output_type }}">
-                        {% for category in selected_categories %}<input type="hidden" name="category_{{ category }}" value="1">{% endfor %}
-                        <input type="hidden" name="pageno" value="{{ pageno }}">
-                        <button type="submit" class="btn btn-default">{{ output_type }}</button>
+							<div id="mce-responses" class="clear">
+							<div class="response" id="mce-error-response" style="display:none"></div>
+							<div class="response" id="mce-success-response" style="display:none"></div>
+							</div>
+						<div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_6d75b09bde13766aab41a5c8e_55e7c9d466" tabindex="-1" value=""></div>
+						<div class="clear"></div>
                     </form>
-                    {% endfor %}
                     <div class="clearfix"></div>
                 </div>
             </div>

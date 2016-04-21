@@ -196,7 +196,6 @@ engines:
     engine : qwant
     shortcut : qw
     categories : general
-    disabled : True
 
   - name : qwant images
     engine : qwant
@@ -344,6 +343,7 @@ locales:
     el_GR : Ελληνικά (Greek_Greece)
     eo : Esperanto (Esperanto)
     es : Español (Spanish)
+    eu : Euskara (Bask)
     fr : Français (French)
     he : עברית (Hebrew)
     hu : Magyar (Hungarian)

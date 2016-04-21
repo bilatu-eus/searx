@@ -1,5 +1,6 @@
 html{position:relative;min-height:100%}
-body{margin-bottom:80px}
+/*body{margin-bottom:80px; background-image:url(http://www.bilatu.eus/static/themes/oscar/img/fond-herbes.png);background-repeat:no-repeat; background-attachment: fixed}*/
+body{margin-bottom:80px;}
 .footer{position:absolute;bottom:0;width:100%;height:60px}
 input[type=checkbox]:checked+.label_hide_if_checked,input[type=checkbox]:checked+.label_hide_if_not_checked+.label_hide_if_checked{display:none}
 input[type=checkbox]:not(:checked)+.label_hide_if_not_checked,input[type=checkbox]:not(:checked)+.label_hide_if_checked+.label_hide_if_not_checked{display:none}

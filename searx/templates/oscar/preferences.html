@@ -101,6 +101,7 @@
                         </select>
                     {{ preferences_item_footer(safesearch_info, safesearch_label, rtl) }}
 
+						<span style="visibility: hidden">
                     {% set theme_label = _('Themes') %}
                     {% set theme_info = _('Change searx layout') %}
                     {{ preferences_item_header(theme_info, theme_label, rtl) }}
@@ -110,6 +111,7 @@
                             {% endfor %}
                         </select>
                     {{ preferences_item_footer(theme_info, theme_label, rtl) }}
+                    	<span>
                 </div>
                 </fieldset>
             </div>

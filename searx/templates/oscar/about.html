@@ -3,65 +3,85 @@
 {% block title %}{{ _('about') }} - {% endblock %}
 {% block content %}
 <div{% if rtl %} dir="ltr"{% endif %}>
-    <h1>About <a href="{{ url_for('index') }}">searx</a></h1>
+	<div class="row">
+		<div  style="float:left; width:50%">
+        
+<h1>Bilatu.eus-en aurkezpena</h1>
+<h2>Zer da Bilatu.eus ?</h2>
+<p>Bilatu.eus bilaketa tresna bat da, internet plataforma anitzetan bildutako emaitzak proposatzen dituenak, hots Qwant, Wikipedia, deezer, twitter, vimeo bezala. Google, Bing edo Yahoo ! bezalako bilaketa tresna batzuen erabilpenaz hurbiltzen da. Baina azken horietaz ezberdintzen da, Bilatu.eus-ek bere erabiltzaileen bizi pribatua babesten bait du eta ez bait da irabazi oneko antolakuntza bat. Bestalde, tokiko enpresen aurkitegi batean oinarritako emaitza komertzialak bakarrik proposatuko ditu Bilatu.eus-ek eta hiru hizkuntzetan erabilgarri izanen da: Euskara, Frantsesa eta Gaztelera.</p>
+<h2>Zergatik Bilatu.eus ?</h2>
+<ul>
+  <li>Munduko liderren monopolioari aternatiba bat sortzeko</li>
+    <li>Mugaz gaindiko eta tokiko trukaketak bultzatzeko eta ekonomiaren parte bat bertokiratzeko</li>
+    <li>Internauten bizi pribatua babesteko</li>
+    <li>Kultur eta hizkuntz ondarea sustatzeko</li>
+   <li>Ber interesetako tokiko proiektuak sostengatzeko</li>
+</ul>
+<h2>Nola ibiltzen da ?</h2>
+<p>Ohizko bilaketa tresnetan bilaketa bat egitea bezain aise da erabiltzaileentzat. 
+  Bilatu.eus-en komertzial lotura bat agerrarazi nahiko duten enpresak, Bilatu.eus elkartearen kide izan beharko dira eta haien urtesaria ordaindu ere. Beste bilaketa tresnak ez bezala, emaitzen egokitasunaren arabera agertuko dira enpresak, eta ohizko publizitate konpainiak ez bezala ere, haiekin beti gehiago ordaindu behar delarik gehiago agertzeko gisan.</p>
+<h2>Abantailak enpresentzat</h2>
+<p>Mugaz gaindiko publiko batetaz ezagutarazteko bide berri bat da enpresentzat, tokiko hedabide bati esker eta Google eta Pages Jaunes bezalako aktoreekin baino merkeago.</p>
+<h2>Abantailak erabiltzaileentzat</h2>
+<p>Hedabide horrek, erabiltzaileen ohiturak ez ditu aldatuko eta tokika eduki egokiago bati sarbidea ukaiteko aukera emanen dio. 3 hizkuntzetan erabilgarri, Bilatu.eus-ek mugaz gaindiko harreman berriak sortzeko gaitasuna du. Bukatzeko, erabiltzailearen datu pribatuen babesari dagokionez, konfiantza oso batekin haien bilaketak egiten ahalko dituzte.</p>
+<h2>Abantailak Euskal Herriarentzat</h2>
+<p>Bilatu.eus , Hegoaldeko eta Iparraldeko eskualdeak biltzen dituen tresna digital bat ukaiteko aukera da Euskal Herriarentzat.
+  Tokiko ondarearen sustapenari parte hartuko duen tresna da, bereziki Euskararen garapena eta erabilpenaren bitartez.
+3 hizkuntzetan izanen den eta mugaz gaindiko lurralde osoko enpresa, elkarte eta elkargo guziak biltzen dituen aurkitegia, egitura ekonomikoa dinamizatzeko tresna bat izanen da. Bilatu.eus-ek mundu osoan gaindi Euskal Herriaren sustapena egiteko ahala emanen dio.</p>
+<h1>Abantailak munduarentzat</h1>
+<p>Bilatu, Open Source lizentzia pean garatua izan da, horrek erran nahi duelarik denek berritz erabiltzeko ahala dugula urririk eta inorren baimenik gabe. Eredu teknologiko, soziologiko eta ekonomiko bat plantan ematea da Bilatu-ren helburua, eta tokiko tresna digital bat ukan nahi luketen munduko  komunitateentzat garraiagarri da ere.</p>
 
-    <p>Searx is a <a href="https://en.wikipedia.org/wiki/Metasearch_engine">metasearch engine</a>, aggregating the results of other <a href="{{ url_for('preferences') }}">search engines</a> while not storing information about its users.
-    </p>
-    <h2>Why use Searx?</h2>
-    <ul>
-        <li>Searx may not offer you as personalised results as Google, but it doesn't generate a profile about you</li>
-        <li>Searx doesn't care about what you search for, never shares anything with a third party, and it can't be used to compromise you</li>
-        <li>Searx is free software, the code is 100% open and you can help to make it better. See more on <a href="https://github.com/asciimoo/searx">github</a></li>
-    </ul>
-    <p>If you do care about privacy, want to be a conscious user, or otherwise believe
-    in digital freedom, make Searx your default search engine or run it on your own server</p>
+		</div>
+        <div  style="float:left; width:50%">
+        
+<h1>Présentation de Bilatu.eus</h1>
+<h2>Bilatu.eus c’est quoi ?</h2>
+<p>Bilatu.eus est un moteur de recherche qui propose des résultats collectés auprès de nombreuses plateformes web tel que Qwant, Wikipedia, deezer, twitter, vimeo… L’utilisation est proche de celle d’un moteur de recherche tel que Google, Bing ou Yahoo ! A la différence de ces derniers, Bilatu.eus protège la vie privé de ses utilisateurs et n’est pas une organisation à but lucrative. D’autre part Bilatu.eus proposera des résultats commerciaux uniquement basé sur un annuaire d’entreprises locales et sera disponible en trois langues : Basque, Français et Espagnol.</p>
+<h1>Pourquoi Bilatu.eus ?</h1>
+<p><ul>
+  <li>Créer une alternative aux monopoles des leaders mondiaux  </li>
+  <li>Favoriser les échanges locaux transfrontaliers et relocaliser une partie de l’économie  </li>
+  <li>Protéger la vie privée des internautes  </li>
+  <li>Promouvoir le patrimoine culturel et linguistique  </li>
+  <li>Soutenir les projets locaux d’intérêt commun </li>
+</ul></p>
 
-<h2>Technical details - How does it work?</h2>
-
-<p>Searx is a <a href="https://en.wikipedia.org/wiki/Metasearch_engine">metasearch engine</a>,
-inspired by the <a href="http://seeks-project.info/">seeks project</a>.<br />
-It provides basic privacy by mixing your queries with searches on other platforms without storing search data. Queries are made using a POST request on every browser (except chrome*). Therefore they show up in neither our logs, nor your url history. In case of Chrome* users there is an exception, Searx uses the search bar to perform GET requests.<br />
-Searx can be added to your browser's search bar; moreover, it can be set as the default search engine.
+<h2>Comment ça marche ?</h2>
+<p>Pour les utilisateurs, c’est aussi facile que de faire une recherche sur son moteur de recherche habituel.
+  Pour les entreprises qui souhaitent afficher un lien commercial sur Bilatu.eus, elles devront être adhérentes de l’association Bilatu.eus et s’acquitter de leur cotisation. A la différence des autres moteurs de recherches, les entreprises apparaitrons en fonction des pertinences des résultats contrairement aux régies publicitaires traditionnelles où il faut payer plus pour apparaitre plus.</p>
+<h2>Intérêt pour les entreprises</h2>
+<p>Pour les entreprises, c’est un nouveau moyen de se faire connaître auprès d’un public transfrontalier avec un média local et plus économique que les acteurs de type, Google ou Pages Jaunes.</p>
+<h2>Intérêt pour les utilisateurs</h2>
+<p>Pour les utilisateurs, c’est un nouveau média qui n’altère pas ses habitudes et qui lui permettra d’accéder à un contenu plus pertinent localement. Disponible en 3 langues, Bilatu.eus permet de tisser de nouvelles relations transfrontalières. Enfin, l’utilisateur peut faire ses recherches en toute confiance concernant la protection de ses données privées. </p>
+<h2>Intérêt pour le Pays Basque</h2>
+<p>Bilatu.eus est l’occasion pour le Pays Basque de disposer d’un outil numérique rassemblant les régions du sud et du nord. Cet outil participera à la promotion du patrimoine local, notamment,  à travers le développement et l’utilisation de la langue Basque.
+La création d’un annuaire en 3 langues rassemblant toutes les entreprises, associations et collectivités présentent sur l’ensemble du territoire transfrontalier sera un outil permettant de dynamiser le tissu économique. Bilatu.eus permettra également de faire la promotion du Pays basque à travers le monde.</p>
+<h2>Intérêt pour le monde</h2>
+<p>Bilatu est développé sous licence Open Source ce qui signifie que tout le monde peut le réutiliser gratuitement et sans l’autorisation de personne. L’objectif de Bilatu est de mettre en place un modèle technologique, sociologique et économique transportable pour d’autres communautés dans le monde qui souhaiterait se doter d’un outil numérique locale. 
 </p>
 
-<h2>How can I make it my own?</h2>
+<div class="panel panel-default">
+		<div class="panel-heading">
+			<h4 class="panel-title">Inscrivez vous à la newsletter</h4>
+		</div>
+	
+    	<div class="panel-body">
+			<form action="//hodei.us9.list-manage.com/subscribe/post?u=6d75b09bde13766aab41a5c8e&amp;id=55e7c9d466" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+			<label for="mce-EMAIL">Email</label>
+			<input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL">
+			<input type="submit" value="Enregistrer" name="subscribe" id="mc-embedded-subscribe" class="button" />
+			<div id="mce-responses" class="clear">
+				<div class="response" id="mce-error-response" style="display:none"></div>
+				<div class="response" id="mce-success-response" style="display:none"></div>
+			</div>
+			<div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_6d75b09bde13766aab41a5c8e_55e7c9d466" tabindex="-1" value=""></div>
+			<div class="clear"></div>
+			</form>
+			<div class="clearfix"></div>
+		</div>
+</div>
 
-<p>Searx appreciates your concern regarding logs, so take the <a href="https://github.com/asciimoo/searx">code</a> and run it yourself! <br />Add your Searx to this <a href="https://github.com/asciimoo/searx/wiki/Searx-instances">list</a> to help other people reclaim their privacy and make the Internet freer!
-<br />The more decentralized the Internet, is the more freedom we have!</p>
-
-
-<h2>More about searx</h2>
-
-<ul>
-    <li><a href="https://github.com/asciimoo/searx">github</a></li>
-    <li><a href="https://www.ohloh.net/p/searx/">ohloh</a></li>
-    <li><a href="https://twitter.com/Searx_engine">twitter</a></li>
-    <li>IRC: #searx @ freenode (<a href="https://kiwiirc.com/client/irc.freenode.com/searx">webclient</a>)</li>
-    <li><a href="https://www.transifex.com/projects/p/searx/">transifex</a></li>
-</ul>
-
-
-<hr />
-
-<h2 id="faq">FAQ</h2>
-
-<h3>How to add to firefox?</h3>
-<p><a href="#" onclick="window.external.AddSearchProvider(window.location.protocol + '//' + window.location.host + '{{ url_for('opensearch') }}');">Install</a> searx as a search engine on any version of Firefox! (javascript required)</p>
-
-<h2 id="dev_faq">Developer FAQ</h2>
-
-<h3>New engines?</h3>
-<ul>
-    <li>Edit your <a href="https://raw.github.com/asciimoo/searx/master/searx/settings.yml">settings.yml</a></li>
-    <li>Create your custom engine module, check the <a href="https://github.com/asciimoo/searx/blob/master/examples/basic_engine.py">example engine</a></li>
-</ul>
-<p>Don't forget to restart searx after config edit!</p>
-
-<h3>Installation/WSGI support?</h3>
-<p>See the <a href="https://github.com/asciimoo/searx/wiki/Installation">installation and setup</a> wiki page</p>
-
-<h3>How to debug engines?</h3>
-<p><a href="{{ url_for('stats') }}">Stats page</a> contains some useful data about the engines used.</p>
-
+		</div>
+	</div>
 </div>
 {% endblock %}

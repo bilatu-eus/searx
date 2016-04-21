@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <OpenSearchDescription xmlns="http://a9.com/-/spec/opensearch/1.1/">
   <ShortName>{{ instance_name }}</ShortName>
-  <Description>a privacy-respecting, hackable metasearch engine</Description>
+  <Description>Moteur de recherche du Pays basque</Description>
   <InputEncoding>UTF-8</InputEncoding>
   <Image>{{ urljoin(host, url_for('static', filename='img/favicon.png')) }}</Image>
-  <LongName>searx metasearch</LongName>
+  <LongName>{{ instance_name }}</LongName>
   {% if opensearch_method == 'get' %}
     <Url type="text/html" method="get" template="{{ host }}search?q={searchTerms}"/>
     {% if autocomplete %}

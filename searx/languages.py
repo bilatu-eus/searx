@@ -44,6 +44,7 @@ language_codes = (
     ("es_MX", "Spanish", "Mexico"),
     ("es_US", "Spanish", "United States"),
     ("es_XL", "Spanish", "Latin America"),
+	("eu_EU", "Euskara", "Euskal Herria"),
     ("et_EE", "Estonian", "Estonia"),
     ("fi_FI", "Finnish", "Finland"),
     ("fr_BE", "French", "Belgium"),
